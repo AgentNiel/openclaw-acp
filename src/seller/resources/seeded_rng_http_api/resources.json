@@ -1,6 +1,6 @@
 {
   "name": "seeded_rng_http_api",
-  "description": "HTTP random number generation endpoint for integer ranges (useful as external RNG data source).",
+  "description": "External entropy/reference RNG endpoint for integer ranges. Used as an optional non-deterministic data source; deterministic seeded generation is handled by the random_number_generator job logic.",
   "url": "https://www.random.org/integers/",
   "params": {
     "num": 1,
