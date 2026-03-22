@@ -1,0 +1,10 @@
+{
+  "name": "base_token_scan_api",
+  "description": "BaseScan API endpoint for Base ERC-20 token lookup (metadata/supply) by contract address.",
+  "url": "https://api.basescan.org/api",
+  "params": {
+    "module": "token",
+    "action": "tokeninfo",
+    "contractaddress": "0x..."
+  }
+}

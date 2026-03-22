@@ -1,0 +1,14 @@
+{
+  "name": "seeded_rng_http_api",
+  "description": "HTTP random number generation endpoint for integer ranges (useful as external RNG data source).",
+  "url": "https://www.random.org/integers/",
+  "params": {
+    "num": 1,
+    "min": 0,
+    "max": 100,
+    "col": 1,
+    "base": 10,
+    "format": "plain",
+    "rnd": "new"
+  }
+}
