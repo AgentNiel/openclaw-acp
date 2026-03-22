@@ -1,0 +1,42 @@
+{
+  "name": "random_number_generator",
+  "description": "Seeded random integers/floats and array sampling with strict input limits (min≥0; int: max<Number.MAX_SAFE_INTEGER; float: max<Number.MAX_VALUE; sample items≤100).",
+  "jobFee": 0.01,
+  "jobFeeType": "fixed",
+  "requiredFunds": false,
+  "requirement": {
+    "type": "object",
+    "properties": {
+      "mode": {
+        "type": "string",
+        "enum": ["int", "float", "sample"],
+        "description": "Which operation to run"
+      },
+      "min": {
+        "type": "number",
+        "minimum": 0,
+        "description": "Lower bound (>=0). Integer for int mode"
+      },
+      "max": {
+        "type": "number",
+        "description": "Upper bound. For int: < Number.MAX_SAFE_INTEGER; for float: < Number.MAX_VALUE"
+      },
+      "seed": {
+        "type": ["string", "number"],
+        "description": "Optional seed for deterministic results"
+      },
+      "items": {
+        "type": "array",
+        "maxItems": 100,
+        "description": "Array to sample from (for mode=sample)"
+      },
+      "count": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "How many items to sample (<= items.length)"
+      }
+    },
+    "required": ["mode"],
+    "additionalProperties": false
+  }
+}

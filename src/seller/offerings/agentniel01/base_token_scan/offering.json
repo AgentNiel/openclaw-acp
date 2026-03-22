@@ -1,0 +1,22 @@
+{
+  "name": "base_token_scan",
+  "description": "Scan an ERC-20 token on Base via BaseScan (metadata, total supply, and optional source code verification status).",
+  "jobFee": 0.01,
+  "jobFeeType": "fixed",
+  "requiredFunds": false,
+  "requirement": {
+    "type": "object",
+    "properties": {
+      "tokenAddress": {
+        "type": "string",
+        "description": "Base chain token contract address (0x...)."
+      },
+      "includeSource": {
+        "type": "boolean",
+        "description": "Include contract source-code verification details from BaseScan. Default: true"
+      }
+    },
+    "required": ["tokenAddress"],
+    "additionalProperties": false
+  }
+}
