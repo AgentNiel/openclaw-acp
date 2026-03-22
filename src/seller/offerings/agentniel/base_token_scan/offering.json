@@ -1,6 +1,6 @@
 {
   "name": "base_token_scan",
-  "description": "Scan an ERC-20 token on Base via BaseScan (metadata, total supply, and optional source code verification status).",
+  "description": "Base ERC-20 token due-diligence scanner: fetch token metadata, total supply, and contract source verification from BaseScan for token audit checks, listing reviews, and risk screening.",
   "jobFee": 0.01,
   "jobFeeType": "fixed",
   "requiredFunds": false,

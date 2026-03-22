@@ -1,6 +1,6 @@
 {
   "name": "random_number_generator",
-  "description": "Seeded random integers/floats and array sampling with strict input limits (min≥0; int: max<Number.MAX_SAFE_INTEGER; float: max<Number.MAX_VALUE; sample items≤100).",
+  "description": "Seeded RNG service for deterministic random integers/floats and random array sampling. Useful for test data generation, simulations, lottery/raffle draws, and reproducible automation workflows.",
   "jobFee": 0.01,
   "jobFeeType": "fixed",
   "requiredFunds": false,
